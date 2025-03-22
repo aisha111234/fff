@@ -1,0 +1,109 @@
+/* Скрываем ссылку "Skip to Main Content", показываем при фокусе */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #fff;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Стили для body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для header */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Стили для навигации */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: 0.3s;
+}
+
+/* Hover-эффект для навигации */
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Основной контент */
+main {
+    background-color: #fff;
+    font-size: 18px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Футер */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* Стили для изображений */
+img {
+    border: 3px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Грид для галереи */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Стили для flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* nth-child для изменения border-radius у каждого второго изображения */
+.grid img:nth-child(odd) {
+    border-radius: 50%;
+}
